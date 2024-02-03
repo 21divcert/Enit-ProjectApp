@@ -56,6 +56,7 @@ flutter:
     - assets/images/Home_Icon.png
     - assets/images/MyPage_Icon.png
     - assets/images/splash_image.png
+    - assets/images/home_background.png
 
   fonts:
     - family: SKYBORI

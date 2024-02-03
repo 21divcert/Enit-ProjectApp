@@ -130,7 +130,7 @@ class __FormContentState extends State<_FormContent> {
     return InkWell(
       onTap: () {
         // 회원가입 페이지로 라우팅원
-        Navigator.push(
+        Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => SignUpPage()));
       },
       child: const Text(
@@ -158,9 +158,9 @@ class __FormContentState extends State<_FormContent> {
       ),
       onPressed: () {
         // if (_formKey.currentState?.validate() ?? false) {
-        //   // 로그인 처리인
+        //   // 로그인 처리
         // }
-        Navigator.push(
+        Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => Tabs()));
       },
     );
