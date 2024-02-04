@@ -134,7 +134,7 @@ class UserListView extends StatelessWidget {
         children: [
           // 이미지 버튼
           IconButton(
-            icon: Icon(Icons.heart_broken), // 버튼에 들어갈 이미지 경로 넣어줘야됨
+            icon: Icon(Icons.content_paste), // 버튼에 들어갈 이미지 경로 넣어줘야됨
             onPressed: () {
               // 클릭 이벤트 비워둠
             },

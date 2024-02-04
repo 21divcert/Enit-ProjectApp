@@ -4,9 +4,10 @@ import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:enit_project_app/utils/tabs.dart';
 import 'Board/view_boardpage.dart';
+import 'Grasspage/view_grasspage.dart';
 import 'Login/Login/view_loginpage.dart';
 import 'Home/view_homepage.dart';
-import 'Mypage/view_mypage.dart';
+import 'Grasspage/view_grasspage.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -17,8 +18,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final NavigationController navigationController =
-      Get.find(); // 이미 Get.put로 생성된 인스턴스를 가져옵니다.
+  final NavigationController navigationController = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/login', page: () => LoginPage()),
         GetPage(name: '/home', page: () => HomePage()),
         GetPage(name: '/board', page: () => BoardPage()),
-        GetPage(name: '/mypage', page: () => MyPage()),
+        GetPage(name: '/grass', page: () => GrassPage()),
       ],
       initialRoute: '/login',
       home: Obx(() => IndexedStack(
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
               LoginPage(),
               HomePage(),
               BoardPage(),
-              MyPage(),
+              GrassPage(),
             ],
           )),
     );
