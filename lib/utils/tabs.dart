@@ -25,18 +25,21 @@ class Tabs extends StatelessWidget {
             return HomePage(); // 기본값으로 홈 페이지 반환
         }
       }),
-      bottomNavigationBar: Obx(() => MoltenBottomNavigationBar(
-            selectedIndex: navigationController.tabIndex.value,
-            domeCircleColor: Color(0xfffc4ebb2),
-            domeCircleSize: 70,
-            onTabChange: (index) {
-              navigationController.changeTab(index);
-            },
-            tabs: [
-              MoltenTab(icon: Image.asset('assets/images/Home_Icon.png')),
-              MoltenTab(icon: Image.asset('assets/images/Board.png')),
-              MoltenTab(icon: Image.asset('assets/images/Grass.png')),
-            ],
+      bottomNavigationBar: Obx(() => Container(
+            color: Colors.pink.shade50,
+            child: MoltenBottomNavigationBar(
+              selectedIndex: navigationController.tabIndex.value,
+              domeCircleColor: Color(0xfffc4ebb2),
+              domeCircleSize: 70,
+              onTabChange: (index) {
+                navigationController.changeTab(index);
+              },
+              tabs: [
+                MoltenTab(icon: Image.asset('assets/images/Home_Icon.png')),
+                MoltenTab(icon: Image.asset('assets/images/Board.png')),
+                MoltenTab(icon: Image.asset('assets/images/Grass.png')),
+              ],
+            ),
           )),
     );
   }

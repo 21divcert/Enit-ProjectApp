@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
         appBar: HomeAppBar(),
         body: Container(
           decoration: BoxDecoration(
-            color: Color(0xfff3f7d7),
+            color: Colors.pink.shade50,
             image: DecorationImage(
               image: AssetImage('assets/images/home_background.png'),
               fit: BoxFit.cover,
