@@ -26,7 +26,7 @@ class Tabs extends StatelessWidget {
         }
       }),
       bottomNavigationBar: Obx(() => Container(
-            color: Colors.pink.shade50,
+            color: Colors.blue.shade50,
             child: MoltenBottomNavigationBar(
               selectedIndex: navigationController.tabIndex.value,
               domeCircleColor: Color(0xfffc4ebb2),
